@@ -1,0 +1,13 @@
+=========================
+Source Code for OKT site 
+=========================
+
+This site is built principally with Django (1.2) and Pinax (0.9).
+
+Additions in components and functionality are being made in the form of modules
+in the Fields of Streams (http://github.com/openkt/fosdjango) package.
+
+Customizations to the site's templates and media are included here. Media were
+built using Pinax's "build_media" command. 
+
+

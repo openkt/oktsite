@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+# settings for OKT site
+
+from django.conf import settings
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+SERVE_MEDIA = False
+
+ADMINS = [
+    # (""),
+]
+
+MANAGERS = ADMINS
+
+DATABASES = {}
+
+TIME_ZONE = "US/Central"
+
+USE_I18N = False
+
+STATICFILES_DIRS = settings.STATICFILES_DIRS + []
+
+SECRET_KEY = ""
+
+AUTH_PROFILE_MODULE = "basic_profiles.Profile"
+NOTIFICATION_LANGUAGE_MODULE = "account.Account"
+
+ACCOUNT_OPEN_SIGNUP = False
+ACCOUNT_REQUIRED_EMAIL = False
+ACCOUNT_EMAIL_VERIFICATION = False
+ACCOUNT_EMAIL_AUTHENTICATION = False
+ACCOUNT_UNIQUE_EMAIL = EMAIL_CONFIRMATION_UNIQUE_EMAIL = False
+
+EMAIL_CONFIRMATION_DAYS = 2
+CONTACT_EMAIL = "okt@thefieldofstreams.net"
+SITE_NAME = "Open Knowledge Tools"
+
+DEBUG_TOOLBAR_CONFIG = {
+    "INTERCEPT_REDIRECTS": False,
+}
+
